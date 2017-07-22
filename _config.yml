@@ -11,8 +11,8 @@ title                    : "快到碗里来"
 title_separator          : "-"
 name                     : "Your Name"
 description              : "Always Young."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "inpot.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               :winepot2005@163.com
 facebook:
   username               :
   app_id                 :
@@ -80,9 +80,9 @@ author:
   name             : "罗明"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  location         : "四川.成都"
+  email            : "winepot2005@163.com"
+  uri              : "www.goinbowl.com"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -101,9 +101,9 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "winepot2005@163.com"
   vine             :
-  weibo            :
+  weibo            : "兜兜头有你"
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
