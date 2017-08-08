@@ -49,7 +49,22 @@ layout: default
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
       </footer>
-
+      
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'inpot',
+    repo: 'inpot.github.io',
+    oauth: {
+        client_id: 'f13e26886b772ab050da',
+        client_secret: '71c0328ca014ac3f1f3b1f79fc38a67c17a49520',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
+      
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
