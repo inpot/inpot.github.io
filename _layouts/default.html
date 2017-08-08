@@ -28,20 +28,7 @@
     {% include browser-upgrade.html %}
     {% include masthead.html %}
     {{ content }}
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: 'inpot',
-    repo: 'inpot.github.io',
-    oauth: {
-        client_id: 'f13e26886b772ab050da',
-        client_secret: '71c0328ca014ac3f1f3b1f79fc38a67c17a49520',
-    },
-});
-gitment.render('gitmentContainer');
-</script>
+    
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
