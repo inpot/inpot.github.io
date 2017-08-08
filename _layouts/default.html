@@ -27,6 +27,7 @@
 </script-->
     {% include browser-upgrade.html %}
     {% include masthead.html %}
+    {{ content }}
 <div id="gitmentContainer"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
@@ -41,8 +42,6 @@ var gitment = new Gitment({
 });
 gitment.render('gitmentContainer');
 </script>
-    {{ content }}
-
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
