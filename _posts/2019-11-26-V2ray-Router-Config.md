@@ -89,7 +89,7 @@ conf-dir=/etc/config/proxy
 ```
 
 # 3. dns转发设置
-安装dns-forwarder或dns-over-https类似的dns转发软件，将1053端口进入的dns请求转发至可信的dns server上，完成解析。
+安装dns-forwarder, 或支持dot,doh的stubby或dns-over-https类似的dns转发软件，将1053端口进入的dns请求转发至可信的dns server上，完成解析。
 
 # 4. 防火墙配置(dnsmasq分流方案)
 ```bash
