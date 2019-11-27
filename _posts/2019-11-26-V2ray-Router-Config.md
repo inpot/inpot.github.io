@@ -9,8 +9,8 @@ v2ray配置有两种方案，
 参考 https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt ,  https://gitee.com/felix-fly/v2ray-openwrt 
 
 >
->1. dns-forwarder listen 1053端口，将dns请求转为tcp请求到8.8.8.8或其他可信的dns server
->2. dnsmasq负责所有的dns接收，添加gfwlist 的ipset文件到dnsmasq中。gfwlist中的域名转发到dns-forwarder的1053端口
+>1. dns-forwarder listen 5353端口，将dns请求转为tcp请求到8.8.8.8或其他可信的dns server
+>2. dnsmasq负责所有的dns接收，添加gfwlist 的ipset文件到dnsmasq中。gfwlist中的域名转发到dns-forwarder的5353端口
 >3. dnsmasq将gfwlist中的域名对应的ip添加到ipset(gfwlist)
 >4. 将ipset(gfwlist)转到v2ray端口上
 >5. v2ray不再提供路由。
@@ -78,7 +78,7 @@ ln -s /etc/config/v2ray/v2ray.service /etc/init.d/v2ray
 
 # 2. dnsmasq配置
 下载gfw.conf
-https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt/blob/master/gw.hosts
+https://cokebar.github.io/gfwlist2dnsmasq/dnsmasq_gfwlist_ipset.conf
 到/etc/config/proxy/
 ```bash
 vi /etc/dnsmasq.conf
