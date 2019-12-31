@@ -12,8 +12,9 @@ Email: winepot2005@163.com
 ## 技能清单
 
 * 熟练使用Linux, macOS操作系统及svn,git版本管理工具。
+* 熟练使用flutter进行跨平台开发
 * 熟练搭建使用gerrit+jenkins持续集成系统。
-* 使用Kotlin, Rxjava2, Retrofit, Dagger2,DataBinding, glide, android.architechture等开发库搭建了一套MVVM Android app 快速开发库，基于快速开发库编写了一套Android Studio template, 能帮助企业迅速完成业务开发。 
+* 使用Kotlin, Rxjava2, Retrofit, Dagger2,DataBinding等开发库搭建了一套MVVM Android app 快速开发库，基于快速开发库编写了一套Android Studio template, 能帮助企业迅速完成业务开发。 
 
 ## 教育经历
 
