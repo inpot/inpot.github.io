@@ -51,8 +51,8 @@ layout: default
       </footer>
       
 <div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js" />
+<link rel="stylesheet" href="https://raw.githubusercontent.com/inpot/inpot.github.io/master/gitment/default.css">
+<script src="https://raw.githubusercontent.com/inpot/inpot.github.io/master/gitment/gitment.browser.js" />
 <script>
 var gitment = new Gitment({
 	owner: 'winepot2005@gmail.com',
@@ -63,21 +63,6 @@ var gitment = new Gitment({
     },
 });
 gitment.render('gitmentContainer');
- // Auto Initialize Comments
-
-let cmtBtns = document.getElementsByClassName('gitment-comments-init-btn');
-let isClicked = false;
-
-let timer = setInterval(() => {
-  Array.prototype.forEach.call(cmtBtns, item => {
-    item.click();
-    isClicked = true;
-    if(isClicked) {
-      clearInterval(timer);
-      console.log('Clear timer.')
-    }        
-  })
-}, 1000)
 </script>
       
       {% if page.share %}{% include social-share.html %}{% endif %}
