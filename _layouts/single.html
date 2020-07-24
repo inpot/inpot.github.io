@@ -55,6 +55,7 @@ layout: default
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
+window.title_id = window.location.hash.match(/#(.*?)([?]|$)/) ? window.location.hash.match(/#(.*?)([?]|$)/)[1] : '/';
 const gitalk = new Gitalk({
   clientID: '9bab88a83ad79018d1d6',
   clientSecret: 'd59ad7981a1739d1d90cc46fdabd6ffdbf80c959',
