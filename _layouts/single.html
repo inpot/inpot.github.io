@@ -63,6 +63,21 @@ var gitment = new Gitment({
     },
 });
 gitment.render('gitmentContainer');
+ // Auto Initialize Comments
+
+let cmtBtns = document.getElementsByClassName('gitment-comments-init-btn');
+let isClicked = false;
+
+let timer = setInterval(() => {
+  Array.prototype.forEach.call(cmtBtns, item => {
+    item.click();
+    isClicked = true;
+    if(isClicked) {
+      clearInterval(timer);
+      console.log('Clear timer.')
+    }        
+  })
+}, 1000)
 </script>
       
       {% if page.share %}{% include social-share.html %}{% endif %}
