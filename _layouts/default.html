@@ -8,7 +8,9 @@
         <img src="{{ site.baseurl }}/resources/imgs/{{ site.avatar }}" class="img-circle" />
         <h3>{{ site.name }}</h3>
         <p>{{ site.description }}</p>
-        <ul class="social">
+		<p><a type="email" href="{{ site.email }}"></p>
+		<p><a type="link" href="http://github.com/{{ site.github }}"></p>
+        <!--ul class="social">
             {% if site.github %}
             <a type="button" href="http://github.com/{{ site.github }}">
                 <i class="fa fa-github"></i>
@@ -30,7 +32,7 @@
                 <i class="fa fa-facebook"></i>
             </a>
             {% endif %}
-        </ul>
+        </ul-->
     </div>
     <div class="posts">
         {{ content }}
