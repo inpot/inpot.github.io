@@ -1,12 +1,13 @@
 name:               "快,快到碗里来"
 description:        "快到碗里来的博客"
 
-url:                ""
+url:                "https://inpot.github.io22"
 author:             "Daniel.Luo"
 email:              "winepot2005@gmail.com"
 avatar:             "avatar.jpg"
 twitter:            "winepot2005@gmail.com"
 github:             "inpot"
+baseurl:            "https://inpot.github.io"
 
 
 background:         "background.jpg"
