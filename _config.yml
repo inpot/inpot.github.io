@@ -4,12 +4,12 @@ description:        "快到碗里来的博客"
 url:                ""
 author:             "Daniel.Luo"
 email:              "winepot2005@gmail.com"
-gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+avatar:             "avatar.jpg"
 twitter:            "winepot2005@gmail.com"
-github:             "github.com/inpot"
+github:             "inpot"
 
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+background:         "background.jpg"
 
 paginate:           5
 paginate_path:      "/page:num/"
