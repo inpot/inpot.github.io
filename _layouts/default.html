@@ -45,6 +45,16 @@
 <script type="text/javascript">
     window.onload = function(){
         document.getElementsByTagName("BODY")[0].classList.remove("preload");
+
+ var vList = ['{{ site.baseurl }}/resources/av/childhood.mp3', '{{ site.baseurl }}/resources/av/15.mp3'];
+ var vLen = vList.length; 
+ var curr = 0; 
+ var audio = document.getElementById("example_audio_1"); 
+ audio.addEventListener('ended', play); 
+ play(); 
+ function play(e) { audio.src = vList[curr]; audio.load(); audio.play(); curr++; if(curr >= vLen){ curr = 0; } }
+
+
     }
 </script>
 </html>
