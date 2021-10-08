@@ -118,3 +118,13 @@ ios: i2ray,shadowrocket
 windows:v2rayN
 Android:BifrostV,V2RayNG 
 也可以跨平台Qv2ray。若遇版本更新不及时，可以找到安装文件夹下的v2ray手动替换
+
+
+
+# 7. 路由器添加Let Encrypt 根证书
+下载 https://letsencrypt.org/certificates/ pem根证书
+复制到路由器的/usr/share/ca-certificates/extras/目录下xx.cert
+编辑文件/etc/ca-certificates.conf文件,添加一行extras/xx.cert
+``` sudo update-ca-certificates ```
+
+系统返回1 added 说明添加成功
